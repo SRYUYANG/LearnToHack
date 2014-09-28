@@ -1,0 +1,38 @@
+#lth-reg-form {
+    margin-top: 40px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.page-header{
+    border-bottom: 0;
+    margin-top: 0px;
+    padding-top: 40px;
+    background: #3F6FA4;
+    color: white;
+}
+
+#lth-reg-header-title{
+    margin: inherit;
+}
+
+body {
+    background-color: #38AA7F;
+}
+
+#lth-reg-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+#lth-reg-content{
+    max-width: 400px;
+    margin: auto;
+    color: white;
+}

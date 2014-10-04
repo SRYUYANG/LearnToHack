@@ -57,3 +57,9 @@ body {
 #lth-reg-intro {
 	text-align: center;
 }
+
+#lth-reg-form {
+	max-width: 256px;
+	margin-left: auto;
+	margin-right: auto;
+}

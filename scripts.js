@@ -24,11 +24,7 @@ $(document).ready(function()
                     stringLength: {
                         min: 1,
                         max: 30,
-                        message: 'You name seems too long'
-                    },
-                    regexp: {
-                        regexp: /^[a-zA-Z]+$/,
-                        message: 'First name can only consist of letters'
+                        message: 'Your name seems too long'
                     }
                 }
             },
@@ -41,11 +37,7 @@ $(document).ready(function()
                     stringLength: {
                         min: 1,
                         max: 30,
-                        message: 'You name seems too long'
-                    },
-                    regexp: {
-                        regexp: /^[a-zA-Z]+$/,
-                        message: 'Last name can only consist of letters'
+                        message: 'Your name seems too long'
                     }
                 }
             },
@@ -56,6 +48,19 @@ $(document).ready(function()
                     },
                     emailAddress: {
                         message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            major: {
+                message: 'Major is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'Major is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 1,
+                        max: 30,
+                        message: 'Your major seems too long'
                     }
                 }
             }

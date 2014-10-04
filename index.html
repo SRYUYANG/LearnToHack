@@ -3,19 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registration-Learn To Hack</title>
-    <meta name="description" content="Registration page">
+    <title>Learn To Hack</title>
+    <meta name="description" content="Registration for Learn to Hack">
     <meta name="author" content="Chengyu Pubudu Maxim">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel=stylesheet href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="http://www.parsecdn.com/js/parse-1.3.0.min.js"></script>
+    <script src="/scripts.js"></script>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
 
 </head>
 
@@ -32,60 +35,69 @@
             </div>
 
 
-            <form id="lth-reg-form-part1" role="form" class="form-inline">
+            <form id="lth-reg-form" role="form">
+            <div id="hi">
                 <div class="form-group">
-                    <label class="sr-only" for="lth-reg-Fname">First Name</label>
-                    <input type="text" class="form-control" id="lth-reg-Fname" placeholder="First name">
+                    <label class="sr-only" for="lth-reg-name"></label>
+                    <input type="text" class="form-control" id="lth-reg-email" placeholder="First name" name="firstName" autofocus>
                 </div>
                 <div class="form-group">
-                    <label class="sr-only" for="lth-reg-Lname">Last Name</label>
-                    <input type="text" class="form-control" id="lth-reg-Lname" placeholder="Last name">
+                    <label class="sr-only" for="lth-reg-name"></label>
+                    <input type="text" class="form-control" id="lth-reg-email" name="lastName" placeholder="Last name">
                 </div>
-            </form>
-            
-            <form id="lth-reg-form-part2" role="form">
-
+                
                 <div class="form-group">
-                    <label class="sr-only" for="lth-reg-Uname">Uniqname</label>
-                    <input type="email" class="form-control" id="lth-reg-Uname" placeholder="Uniqname">
+                    <label class="sr-only" for="lth-reg-email"></label>
+                    <input type="email" class="form-control" id="lth-reg-email" placeholder="Email" name="email">
                 </div>
-
+                
                 <div class="form-group">
-                   <select class="form-control" id="lth-reg-gender">
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
+                    <select class="form-control" for="lth-reg-gender" name="gender">
+						<option>Gender</option>
+						<option>Male</option>
+						<option>Female</option>
+						<option>Other</option>
+					</select>
                 </div>
-
+                
                 <div class="form-group">
-                    <select class="form-control" id="lth-reg-grade">
-                        <option>Freshman</option>
-                        <option>Sophomore</option>
-                        <option>Junior</option>
-                        <option>Senior</option>
-                        <option>Gradeate</option>
-                    </select>
+                    <select class="form-control" for="lth-reg-class" name="class">
+						<option>Class</option>
+						<option>2014</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+						<option>2018</option>
+						<option>Other</option>
+					</select>
                 </div>
-
+                
                 <div class="form-group">
-                    <select class="form-control" id="lth-reg-major">
-                        <option>Computer Science</option>
-                        <option>Computer Engineering</option>
-                        <option>Others</option>
-                        <option>Not decided yet</option>
-                    </select>
+                    <select class="form-control" for="lth-reg-experience" name="experience">
+						<option>Programming experience</option>
+						<option>None</option>
+						<option>Some on my own</option>
+						<option>Some in class</option>
+						<option>More than in class</option>
+						<option>Lots of programming</option>
+					</select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="sr-only" for="lth-reg-major">Major</label>
+                    <input type="text" class="form-control" id="lth-reg-email" placeholder="Major" name="major">
                 </div>
 
                 <div class="text-center">
-                    <button type="button" class="btn btn-primary" id="sign-up">Sign up</button>
+                    <button type="button" id="lth-reg-button" class="btn btn-primary btn-block" disabled>Sign up</button>
                 </div>
-
+            </div>
             </form>
         </div>
 
 
         <div class="footer" id="lth-reg-footer">
-            <p class="text-muted text-center">MHack</p>
+            <p class="text-muted text-center"><a href="http://michiganhackers.org" target="_blank">Michigan Hackers</a></p>
         </div>
     </div>
 
@@ -94,8 +106,7 @@
 
 
 
-    <!-- JS files-->
-    <script src="submit.js"></script>
+    <!-- JS files-->    
 </body>
 
 </html>

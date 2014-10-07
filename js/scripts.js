@@ -72,12 +72,25 @@ $(document).ready(function()
                 message: 'Class is not valid',
                 validators: {
                     notEmpty: {
-                        message: 'Please select your graduation year'
+                        message: 'Please select your year'
                     },
                     stringLength: {
                         min: 1,
                         max: 10,
-                        message: 'Please select your graduation year'
+                        message: 'Please select your year'
+                    }
+                }
+            },
+            experience: {
+                message: 'Class is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'Please select experience'
+                    },
+                    stringLength: {
+                        min: 1,
+                        max: 20,
+                        message: 'Please select experience'
                     }
                 }
             },
@@ -96,4 +109,20 @@ $(document).ready(function()
             }
         }
     });
+    
+    // add @umich.edu
+   /*
+$('#lth-reg-uniqname').val($('#lth-reg-uniqname').val() + '<span style="color: red;">@umich.edu</span>');
+
+   $('#lth-reg-uniqname').keyup(function(){
+        if($(this).val().length !=0){
+            $('#lth-reg-button').attr('disabled', false);
+        }
+        else
+        {
+            $('#lth-reg-button').attr('disabled', true);        
+        }
+    });
+*/
+
 });

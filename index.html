@@ -15,10 +15,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="/scripts.js"></script>
-    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/bootstrapValidator.js"></script>
+    <link href="/bootstrapValidator.css" rel="stylesheet"/>
 
 </head>
 
@@ -39,48 +38,47 @@
             <div id="hi">
                 <div class="form-group">
                     <label class="sr-only" for="lth-reg-name"></label>
-                    <input type="text" class="form-control" id="lth-reg-email" placeholder="First name" name="firstName" autofocus>
+                    <input type="text" class="form-control" id="lth-reg-firstName" placeholder="First name" name="firstName" autofocus>
                 </div>
                 <div class="form-group">
                     <label class="sr-only" for="lth-reg-name"></label>
-                    <input type="text" class="form-control" id="lth-reg-email" name="lastName" placeholder="Last name">
+                    <input type="text" class="form-control" id="lth-reg-lastName" name="lastName" placeholder="Last name">
+                </div>
+                
+                
+				<div class="form-group">
+					<div class="input-uniqname">
+						<div class="input-group">
+							<input class="form-control" type="text" id="lth-reg-uniqname" name="uniqname" placeholder="uniqname" autocapitalize="none" autocorrect="off" autocomplete="off">
+							<div class="input-group-addon">@umich.edu</div>
+						</div>
+					</div>
+				</div>
+                
+                <div class="form-group">
+                	<div class="input-select">
+	                    <select class="form-control" class="input-select" for="lth-reg-class" name="class">
+							<option>Class</option>
+							<option>Freshman</option>
+							<option>Sophomore</option>
+							<option>Junior</option>
+							<option>Senior</option>
+							<option>Other</option>
+						</select>
+                	</div>
                 </div>
                 
                 <div class="form-group">
-                    <label class="sr-only" for="lth-reg-email"></label>
-                    <input type="email" class="form-control" id="lth-reg-email" placeholder="Email" name="email">
-                </div>
-                
-                <div class="form-group">
-                    <select class="form-control" for="lth-reg-gender" name="gender">
-						<option>Gender</option>
-						<option>Male</option>
-						<option>Female</option>
-						<option>Other</option>
-					</select>
-                </div>
-                
-                <div class="form-group">
-                    <select class="form-control" for="lth-reg-class" name="class">
-						<option>Class</option>
-						<option>2014</option>
-						<option>2015</option>
-						<option>2016</option>
-						<option>2017</option>
-						<option>2018</option>
-						<option>Other</option>
-					</select>
-                </div>
-                
-                <div class="form-group">
-                    <select class="form-control" for="lth-reg-experience" name="experience">
-						<option>Programming experience</option>
-						<option>None</option>
-						<option>Some on my own</option>
-						<option>Some in class</option>
-						<option>More than in class</option>
-						<option>Lots of programming</option>
-					</select>
+                	<div class="input-select">
+	                    <select class="form-control" for="lth-reg-experience" name="experience">
+							<option>Programming experience</option>
+							<option>None</option>
+							<option>Some on my own</option>
+							<option>Some in class</option>
+							<option>More than in class</option>
+							<option>Lots of programming</option>
+						</select>
+                	</div>
                 </div>
                 
                 <div class="form-group">

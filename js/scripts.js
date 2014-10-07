@@ -51,6 +51,49 @@ $(document).ready(function()
                     }
                 }
             },
+            uniqname: {
+                message: 'Uniqname is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'Uniqname is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 3,
+                        max: 8,
+                        message: 'Uniqname must be between 3 and 8 characters'
+                    },
+                    regexp: {
+                        regexp: /^[a-z]+$/,
+                        message: 'Uniqname can only consist of lower-case letters'
+                    }
+                }
+            },
+            class: {
+                message: 'Class is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your year'
+                    },
+                    stringLength: {
+                        min: 1,
+                        max: 10,
+                        message: 'Please select your year'
+                    }
+                }
+            },
+            experience: {
+                message: 'Class is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'Please select experience'
+                    },
+                    stringLength: {
+                        min: 1,
+                        max: 20,
+                        message: 'Please select experience'
+                    }
+                }
+            },
             major: {
                 message: 'Major is not valid',
                 validators: {
@@ -66,4 +109,20 @@ $(document).ready(function()
             }
         }
     });
+    
+    // add @umich.edu
+   /*
+$('#lth-reg-uniqname').val($('#lth-reg-uniqname').val() + '<span style="color: red;">@umich.edu</span>');
+
+   $('#lth-reg-uniqname').keyup(function(){
+        if($(this).val().length !=0){
+            $('#lth-reg-button').attr('disabled', false);
+        }
+        else
+        {
+            $('#lth-reg-button').attr('disabled', true);        
+        }
+    });
+*/
+
 });

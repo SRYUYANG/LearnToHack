@@ -51,6 +51,36 @@ $(document).ready(function()
                     }
                 }
             },
+            uniqname: {
+                message: 'Uniqname is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'Uniqname is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 3,
+                        max: 8,
+                        message: 'Uniqname must be between 3 and 8 characters'
+                    },
+                    regexp: {
+                        regexp: /^[a-z]+$/,
+                        message: 'Uniqname can only consist of lower-case letters'
+                    }
+                }
+            },
+            class: {
+                message: 'Class is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your graduation year'
+                    },
+                    stringLength: {
+                        min: 1,
+                        max: 10,
+                        message: 'Please select your graduation year'
+                    }
+                }
+            },
             major: {
                 message: 'Major is not valid',
                 validators: {

@@ -15,10 +15,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/bootstrapValidator.js"></script>
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
 
 </head>
 
@@ -39,26 +39,22 @@
             <div id="hi">
                 <div class="form-group">
                     <label class="sr-only" for="lth-reg-name"></label>
-                    <input type="text" class="form-control" id="lth-reg-email" placeholder="First name" name="firstName" autofocus>
+                    <input type="text" class="form-control" id="lth-reg-Fname" placeholder="First name" name="firstName" autofocus>
                 </div>
                 <div class="form-group">
                     <label class="sr-only" for="lth-reg-name"></label>
-                    <input type="text" class="form-control" id="lth-reg-email" name="lastName" placeholder="Last name">
+                    <input type="text" class="form-control" id="lth-reg-Lname" name="lastName" placeholder="Last name">
                 </div>
                 
-                <div class="form-group">
-                    <label class="sr-only" for="lth-reg-email"></label>
-                    <input type="email" class="form-control" id="lth-reg-email" placeholder="Email" name="email">
-                </div>
                 
-                <div class="form-group">
-                    <select class="form-control" for="lth-reg-gender" name="gender">
-						<option>Gender</option>
-						<option>Male</option>
-						<option>Female</option>
-						<option>Other</option>
-					</select>
-                </div>
+				<div class="form-group">
+					<div class="input-uniqname">
+						<div class="input-group">
+							<input class="form-control" type="text" id="inputUniqname" name="uniqname" placeholder="uniqname" autocapitalize="none" autocorrect="off" autocomplete="off">
+							<div class="input-group-addon">@umich.edu</div>
+						</div>
+					</div>
+				</div>
                 
                 <div class="form-group">
                     <select class="form-control" for="lth-reg-class" name="class">

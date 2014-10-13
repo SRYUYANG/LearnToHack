@@ -6,13 +6,23 @@ html {
 }
 
 body {
-    background-color: #38AA7F;
+	background: url('/img/l2h-background-edit.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	 -moz-background-size: cover;
+	   -o-background-size: cover;
+	      background-size: cover;
 	/* sticky footer */
     margin-bottom: 80px;
 }
 
+#lth-reg-panel {
+	background: rgba(255,255,255,0.8);
+	max-width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #lth-reg-form {
-    margin-top: 40px;
 }
 
 .container-fluid {
@@ -23,7 +33,7 @@ body {
     border-bottom: 0;
     margin-top: 0px;
     padding-top: 40px;
-    background: #3F6FA4;
+    background: #4d6986;
     color: white;
 }
 
@@ -51,7 +61,7 @@ body {
 #lth-reg-content {
     max-width: 400px;
     margin: auto;
-    color: white;
+    color: black;
 }
 
 #lth-reg-intro {

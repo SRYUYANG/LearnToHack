@@ -6,18 +6,18 @@ html {
 }
 
 body {
-	background: url('/img/l2h-background-edit.jpg') no-repeat center center fixed; 
+	background: url('/img/l2h-background.png') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	 -moz-background-size: cover;
 	   -o-background-size: cover;
 	      background-size: cover;
 	/* sticky footer */
-    margin-bottom: 80px;
+    height: 100vh;
 }
 
 #lth-reg-panel {
-	background: rgba(255,255,255,0.8);
-	max-width: 280px;
+	background: rgba(255,255,255,0.6);
+	max-width: 360px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -25,8 +25,18 @@ body {
 #lth-reg-form {
 }
 
-.container-fluid {
+.container-fluid-outer {
+	display: table;
     padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid-inner {
+	display: table-cell;
+	height: 100px;
+	padding: 0;
+	vertical-align: middle;
 }
 
 .page-header {
@@ -59,17 +69,29 @@ body {
 }
 
 #lth-reg-content {
-    max-width: 400px;
+    max-width: 360px;
     margin: auto;
     color: black;
 }
 
+#logo {
+	background: url("/img/l2h-logo.png") no-repeat center;
+	-webkit-background-size:contain;
+	-moz-background-size:contain;
+	-o-background-size:contain;
+	background-size:contain;
+	height: 144px; 
+	margin-bottom: 8px; 
+	margin-top: 8px;
+}
+
 #lth-reg-intro {
 	text-align: center;
+	padding-bottom: 16px;
 }
 
 #lth-reg-form {
-	max-width: 256px;
+	max-width: 360px;
 	margin-left: auto;
 	margin-right: auto;
 }

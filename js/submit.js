@@ -21,7 +21,8 @@ document.getElementById("lth-reg-button").onclick = function() {
     participant.save(null, {
   success: function(participant) {
     // Execute any logic that should take place after the object is saved.
-    alert('Thanks for your registration');
+    $('#lth-reg-form').hide();
+    $('#lth-reg-end').show();
   },
   error: function(participant, error) {
     // Execute any logic that should take place if the save fails.
